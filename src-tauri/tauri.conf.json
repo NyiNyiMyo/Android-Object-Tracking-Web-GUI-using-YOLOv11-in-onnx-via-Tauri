@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "yolov11-bytetrack-tracking",
+  "version": "0.1.0",
+  "identifier": "com.user.yolov11-bytetrack-tracking",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "https://makerswebtrackyolov11onnx.netlify.app/",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "https://makerswebtrackyolov11onnx.netlify.app/"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "yolov11-bytetrack-tracking",
+        "width": 1250,
+        "height": 720
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
